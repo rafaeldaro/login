@@ -207,24 +207,24 @@
         //código jQuery para mostrare ocultar os formulários
         $(function() {
             $("#btnEsqueci").click(function() {
-                $("#caixaSenha").hide(); //ocultar
-                $("#caixaLogin").show(); //
+                $("#caixaLogin").hide(); //ocultar
+                $("#caixaSenha").show(); //
             });
 
             $("#btnRegistrarNovo").click(function() {
                 $("#caixaLogin").hide(); //ocultar
-                $("#caixaSenha").show(); //
+                $("#caixaRegistro").show(); //
 
             });
 
+            $("#btnJaRegistrado2").click(function() {
+                $("#caixaRegistro").hide(); //ocultar
+                $("#caixaLogin").show(); //
+
+            });
             $("#btnJaRegistrado").click(function() {
                 $("#caixaSenha").hide(); //ocultar
-                $("#caixaRegistro").show(); //
-
-            });
-            $("#btnJaRegistrado2").click(function() {
-                $("#caixaLogin").hide(); //ocultar
-                $("#caixaRegistro").show(); //
+                $("#caixaLogin").show(); //
 
             });
         });

@@ -14,6 +14,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Sistema de login</title>
+
+    <style>
+    #alerta, #caixaSenha, #caixaRegistro{
+        display: none;
+    }
+    
+    </style>
+
 </head>
 
 <body class="bg-dark">
@@ -65,7 +73,7 @@
 
                     <div class="for-group">
                         <p>
-                            Novo Usuário? <a href="#" id="btnRegistrar"> registre-se Aqui!</a>
+                            Novo Usuário? <a href="#" id="btnRegistrarNovo"> registre-se Aqui!</a>
                         </p>
                     </div>
 
@@ -75,8 +83,8 @@
         <!-- final da seção de Login -->
         <br>
         <!-- Formulárion de recuperação de de senha -->
-        <section class="row">
-            <div class="col-lg-4 offset-lg-4 bg-light rounded " id="caixaLogin">
+        <section class="row mt-5">
+            <div class="col-lg-4 offset-lg-4 bg-light rounded " id="caixaSenha">
                 <h2 class="text-center mt-2">
                     Gerar nova Senha
                 </h2>
@@ -137,6 +145,44 @@
                         <input type="password" name="senhaUsuario" id="senhaUsuario" class="form-control" placeholder="Senha">
 
                     </div>
+
+                    <div class="form-group">
+
+                        <input type="password" name="senhaUsuarioConfirmar" id="senhaUsuarioConfirmar" class="form-control" placeholder="Confirmar Senha">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" name="concordar" id="concordar" class="custom-control-input">
+
+
+                            <label for="concordar" class="custom-control-label">
+                                Eu concordo com <a href="#"> os termos e condições do site.</a>
+                            </label>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <input type="submit" value="::Registrar::" name="btnRegistrar" id="btnRegistrar" class="btn btn-primary btn-block">
+
+                    </div>
+
+                    <div class="form-group">
+                        <p class="text-center">
+                            Já registrado? <a href="#" id="btnJaRegistrado2">
+                                Entre por aqui.
+                            </a>
+                        </p>
+                    </div>
+
+
+
 
 
                 </form>

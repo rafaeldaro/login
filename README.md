@@ -2,6 +2,7 @@
 Sistema de ]login em PHP r Javascript
 
 # aula04 - 01/10/2019
+- Validação com HTML
 - Validação dos campos com jQuery validate
 
 # aula03 - 30/09/2019

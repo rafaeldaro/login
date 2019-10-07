@@ -1,5 +1,7 @@
 <?php
 # Back-end
+if(isset)
+
 
 
 echo "\n<pre>\n";
@@ -14,7 +16,7 @@ print("<strong>E-mail:</strong>");
 print("$_GET[e-mail]");
 
 print("<strong>Senha:</strong>");
-print("$_GET[senha]");
+print("$_GET[senhaUsuário]");
 
 print("<strong>Data de Nascimento:</strong>");
 print("$_GET[dataNascimento]");

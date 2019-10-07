@@ -223,7 +223,7 @@
             });
 
             $("#formLogin").validate();
-            
+
             $("#formSenha").validate();
 
             //mostrar e ocultar formulários
@@ -246,6 +246,45 @@
                 $("#caixaSenha").hide(); //ocultar
                 $("#caixaLogin").show(); //mostrar
             });
+
+            //cadastro de novo usuário
+            $("#btnRegistrar").click(function(e) {
+                if (document.queryselector("#formRegistro").checkValidity()) {
+                    e.preventDeafault();//não abrir outra página
+                    //envio dos dados via Ajax
+                    $.ajax({
+                        url: 'recebe_dados.php',
+                        method: 'post',
+                        data: $("#formRegistro").serialize()+'&action=cadastro',
+                        success:function(resposta){
+                            $("#alerta").show();
+                            $(".resultado").html(respostas);
+                        }
+                    });
+
+                }
+                return true;
+            });
+
+
+
+            //login
+            $("#btnEntrar").click(function(e) {
+            
+
+            });
+
+
+
+            //recuperação de senha
+            $("#btnGerar").click(function(e) {
+
+            });
+
+
+
+
+
         });
 
         /*

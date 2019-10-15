@@ -1,4 +1,16 @@
 <?php
+//CONECXAO COM O BANCO DE DADOS
+require_once 'configBD.php';
+
+
+function verificar_entrada($entrada){
+    //filtrando a entrada
+    $saida = htmlspecialchars($entrada);
+    $saida = stripslashes($saida);
+    $saida = trim($saida);
+    return $saida;//retorna a saida limopa
+
+}
 
 
 

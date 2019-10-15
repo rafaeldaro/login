@@ -13,7 +13,7 @@ print("<strong>Nome:</strong>");
 print("$_GET[nomeCompleto]");
 
 print("<strong>E-mail:</strong>");
-print("$_GET[e-mail]");
+print("$_GET[email]");
 
 print("<strong>Senha:</strong>");
 print("$_GET[senhaUsuário]");

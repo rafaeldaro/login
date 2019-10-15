@@ -1,11 +1,8 @@
 # login
 Sistema de ]login em PHP r Javascript
 
-# aula 07 - 15/10/2019
-
-
 # aula 06 - 08/10/2019
-- nada feito
+ Persistência de dados no banco de dados.
 
 # aula05 - 04/10/2019
 Envio de dados do Front-end para o Back-end, método GET e POST.
@@ -23,9 +20,9 @@ jQuery éuma biblioteca de funções javascript.
 
 # aula02 - 24/09/2019
 Layout Bootstrap para os formulários
- - Formulário de login
- - Formulário de recuperação de senha
- - ~Formulário de Cadastro de novos usuários~
+- Formulário de login
+- Formulário de recuperação de senha
+- ~Formulário de Cadastro de novos usuários~
 
 # aula01 - 23/09/2019
  🍆    Começou a Primavera  🍆
@@ -34,7 +31,7 @@ Layout Bootstrap para os formulários
 # Passo a passo em todo início de aula
 
 ## Habilitar o Proxy
- Tecla Windows - Abrir a janela Prompt de Comando
+Tecla Windows - Abrir a janela Prompt de Comando
 Copie e cole a linha abaixo - selecione e pressione as teclas Ctrl C
 
 git config --global http.proxy http://10.1.21.254:3128
@@ -63,3 +60,10 @@ Pressione Enter
 ## Editar utilizando o VS code (é o azul)
 - Windows - abrir o visual studio code 
 - *abrir pasta* no VS Code c:\xampp\htdocs\login
+
+## Importar o banco de dados
+- Acessar no navegador http://localhost/phpmyadmin
+- Clicar em imprimir
+- Selecionar o arquivo, clicando em Browser 
+- Abra o arquivo 127.0.0.1.sql e clique em Executar
+- O banco deve ter sido importado corretamente

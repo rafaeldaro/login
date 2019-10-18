@@ -2,6 +2,7 @@
 Sistema de ]login em PHP r Javascript
 
 # aula 07 - 08/10/2019
+- Início da autenticação e entrada no sistema
 
 
 # aula 06 - 08/10/2019

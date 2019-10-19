@@ -12,11 +12,8 @@ function verificar_entrada($entrada)
 //Teste se existe a ação
 if (isset($_POST['action'])) {
     if ($_POST['action'] == 'cadastro') {
-        //Teste se ação é igual a cadastro
-        # echo "\n<p>cadastro</p>";
-        # echo "\n<pre>";//Pre-formatar
-        # print_r($_POST);
-        # echo "\n<\pre>";
+        //Teste se ação é igual a cadastro echo "\n<p>cadastro</p>";echo "\n<pre>";//Pre-formatarprint_r($_POST);echo "\n<\pre>";
+
         //Pegando dados do formulário
         $nomeCompleto = verificar_entrada($_POST['nomeCompleto']);
         $nomeDoUsuario = verificar_entrada($_POST['nomeDoUsuario']);
@@ -66,12 +63,41 @@ if (isset($_POST['action'])) {
                 }
             }
         }
+
+
+
     } else if ($_POST['action'] == 'login') {
+        $nomeUsuario = verificar_entrada($_POST['nomeUsuario']);
+        $senhaDoUsuario = verificar_entrada($_POST['senhaUsuario']);
+        $senha = sha1($senhaDoUsuario); //senha codificada
+
+        $sql = $connect->prepare("SELECT * FROM usuario WHERE senhaUsuario = ? AND nomeDoUsuario = ?");
+
+        $sql->bind_param("ss", $senha, $nomeUsuario);
+
+        $sql->execute();
+
+        $busca = $sql->fetch();
+
+        if($busca != null){
+            echo "ok";
+        }else{
+            echo "<p class='text-danger'>";
+            echo "Falhou a entrada ao sistema. Nome de usuário ou senha inválidos";
+            echo "</p>";
+            exit();
+        }
+        
+
+
+    
+
         //Senão, teste se ação é login
-        echo "\n<p>login</p>";
-        echo "\n<pre>"; //Pre-formatar
-        print_r($_POST);
-        echo "\n<\pre>";
+        //echo "\n<p>login</p>";
+        //echo "\n<pre>"; //Pre-formatar
+        //print_r($_POST);
+        //echo "\n<\pre>";
+
     } else if ($_POST['action'] == 'senha') {
         //Senão, teste se ação é recuperar senha
         echo "\n<p>senha</p>";

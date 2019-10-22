@@ -31,7 +31,7 @@
             <div class="col-lg-4 offset-lg-4" id="alerta">
                 <div class="alert alert-success text-center">
                     <strong class="resultado">
-                        Alo Ha Tchurmaáaaaaaaaaaaaaaaa!
+                        Olá mundo
                     </strong>
                 </div>
             </div>
@@ -255,7 +255,7 @@
                 if (document
                     .querySelector("#formLogin")
                     .checkValidity()) {
-                    e.preventDefault(); //Não abrir outra págin
+                    e.preventDefault(); //Não abrir outra página
                     //Envio dos dados via Ajax
                     $.ajax({
                         url: 'recebe_dados.php',
@@ -263,14 +263,20 @@
                         data: $("#formLogin").serialize() + '&action=login',
                         success: function(resposta) {
                             $("#alerta").show();
-                            $(".resultado").html(resposta);
+                            
+                            if(resposta === "ok"){
+                                window.location = "perfil.php";
+                            } else{
+                                $(".resultado").html(resposta);
+                            }
+                            
                         }
                     });
                 }
                 return true;
             });
 
-        });
+
         //Recuperação de senha
         $("#btnGerar").click(function(e) {
                             if (document
@@ -290,7 +296,7 @@
                 }
                 return true;
         });
-    
+    });
     
     
         
@@ -319,6 +325,7 @@
             max: jQuery.validator.format("Por favor, forne&ccedil;a um valor menor ou igual a {0}."),
             min: jQuery.validator.format("Por favor, forne&ccedil;a um valor maior ou igual a {0}.")
         });
+        
     </script>
 </body>
 

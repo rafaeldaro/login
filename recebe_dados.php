@@ -24,9 +24,10 @@ if (isset($_POST['action'])) {
         $nomeCompleto = verificar_entrada($_POST['nomeCompleto']);
         $nomeDoUsuario = verificar_entrada($_POST['nomeDoUsuario']);
         $emailUsuario = verificar_entrada($_POST['emailUsuario']);
+        $urlImagem = verificar_entrada($_POST['urlImagem']);
         $senhaDoUsuario = verificar_entrada($_POST['senhaDoUsuario']);
-        $senhaUsuarioConfirmar =
-            verificar_entrada($_POST['senhaUsuarioConfirmar']);
+        $senhaUsuarioConfirmar =verificar_entrada($_POST['senhaUsuarioConfirmar']);
+
 
         $dataCriado = date("Y-m-d"); //Data atual no formato Banco de Dados
         //Codificando as senhas

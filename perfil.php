@@ -1,5 +1,5 @@
 <?php
-    require_once "session.php";
+require_once "session.php";
 ?>
 
 <!DOCTYPE html>
@@ -49,18 +49,34 @@
         <div class="container">
             <h1 class="display-4">Boas-Lindos</h1>
 
-
-            <h2 class="display-2 text-center bg-info rounded p-1 text-light ">
-            <?= $nomeCompleto?>
+            <h2 class="display-2 text-center rounded p-1 text-light" style="background-color: deepSkyBlue">
+                <?= $nomeCompleto ?>
             </h2>
 
-            <h2 class="text-center">
-                E-mail do Usuário: 
-                <a href="mailto:<?= $emailUsuario ?>">  <?= $emailUsuario ?>   </a>
-            </h2>
-            <h2 class="text-center">
-                registrado em:  <?= $dataCriado?>
-            </h2>
+            <div class="row">
+                <div class="col-4">
+
+                    <img class="img-thumbnail" src="<?= $urlImagem ?>" />
+
+
+                </div>
+                <div class="col-8">
+                    <h2 class="text-center">
+                        E-mail do Usuario:
+                        <a href="mailto:<?= $emailUsuario ?>">
+                            <?= $emailUsuario ?>
+                        </a>
+                    </h2>
+
+                    <h2 class="text-center">
+                        Registrado em: <?= $dataCriado ?>
+
+                    </h2>
+
+
+
+                </div>
+            </div>
         </div>
     </div>
 

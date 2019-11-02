@@ -1,5 +1,5 @@
 <?php
-require_once "fotos.php";
+require_once "session.php";
 ?>
 
 

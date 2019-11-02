@@ -128,7 +128,7 @@
 
                     <div class="form-group">
                         <label for="urlImagem">Imagem de perfil</label>
-                        <input type="url" name="urlImagem" id="urlImagem" placeholder="Link da imagem de perfil" class="form-control">
+                        <input type="url" name="$urlImagem " id="urlImagem" placeholder="Link da imagem de perfil" class="form-control">
                     </div>
 
 

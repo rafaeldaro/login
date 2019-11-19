@@ -1,3 +1,19 @@
+<?php
+    if(isset($_GET['token']) && isset($_GET['email'])){
+        require_once 'configBD.php';
+        $email = $_GET['email'];
+        $token = $_GET['token'];
+        $msg = "$email : $token";
+        //só para teste metodo get
+        //
+    }else{
+        header("location: index.php");
+        exit();
+    }
+?>
+
+
+
 <!doctype html>
 <html lang="pt-br">
 

@@ -1,10 +1,13 @@
 # login
 Sistema de ]login em PHP r Javascript
 
-# aula 10 - 28/10/2019
+# aula 19 - 19/11/2019
+ Geração de nova senha.
+# aula 18 - 28/10/2019
+-preparação para geração de nova senha.
 
 # aula 09 - 22/10/2019
--
+
 
 # aula 08 - 21/10/2019
 - Autenticação do usuário e permiçao de acesso ao perfil.php
